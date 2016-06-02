@@ -8,8 +8,8 @@ BRANCH=$(git symbolic-ref --short HEAD)
 
 if [ "$BRANCH" = "master" ]; then
   echo "[WARNING] Attempting to commit to master."
-  echo "Press <Return> to continue"
-  read -r
+  echo "Making you stop to think about your life"
+  sleep 5
 fi
 exit 0
 
