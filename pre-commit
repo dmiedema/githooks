@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# A script to make you stop and pause when you're about
+# to commit to `master`
+#
+
+BRANCH=$(git symbolic-ref --short HEAD)
+
+if [ "$BRANCH" = "master" ]; then
+  echo "[WARNING] Attempting to commit to master."
+  echo "Press <Return> to continue"
+  read -r
+fi
+exit 0
+
